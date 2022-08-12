@@ -20,7 +20,7 @@ body{
 .section2{
     background: rgb(210, 106, 41);
     width: 96%;
-    height: 800px;
+    height: 900px;
 }
 .section3{
     background: rgb(21, 20, 20);
@@ -35,7 +35,8 @@ body{
 
 .iframe{
   width: 98%;
-  height:450px
+  height:450px;
+  overflow: hidden;
 }
 
 .logo_footer{
